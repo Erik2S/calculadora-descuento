@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>descuentos pasados por el usuario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Poppins:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Poppins:ital,wght@0,400;0,700;1,300&display=swap');
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: Poppins;
+            display: grid;
+            justify-items: center;
+            background-color: rgb(248, 215, 250);
+        }
+        h1 {
+            text-transform: uppercase;
+        }
+        section {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        label {
+            font-size: medium;
+            font-weight: 300;
+        }
+        input {
+            background: rgba(255, 0, 255, 0.098);
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            text-align: center;
+            font-size: medium;
+        }
+        #formas-descuento {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        #label-calcular {
+            font-size: larger;
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: rgba(255, 0, 255, 0.098);
+            padding: 20px;
+            margin-top: 15px;
+            border: 1px solid rgb(248, 68, 206);
+            border-radius: 15px;
+        }
+        button {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Calculador de descuento</h1>
+    <section>
+        <div>
+            <label for="input-numero">Numero a descontar</label>
+            <input type="number" name="" id="input-numero">    
+        </div>
+        <div id="formas-descuento">
+            <div>
+                <label for="input-descuento">Porcentaje de descuento</label>    
+                <input type="number" name="" id="input-descuento">
+            </div>
+            <div>
+                <label for="cupon-descuento">Codigo Descuento</label>
+                <input type="text" name="" id="cupon-descuento">
+            </div>
+        </div>
+    </section>
+    <label for="input-enviar" id="label-calcular">Calcular</label>
+    <button id="input-enviar"></button>
+    <h2 id="resultado-operacion"></h2>
+    <script src="./descuentos.js"></script>
+</body>
+</html>
